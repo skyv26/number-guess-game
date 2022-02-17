@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from 'react';
+import GlobalStyle from './styledComponents/globalstyle.styled';
+import { MainContainer } from './styledComponents/styledComponents.styled';
+import './AppStyles/App.css';
+import GameHeader from './components/GameHeader/GameHeader';
+import GameInteraction from './components/GameInteraction/GameInteraction';
+import GameFooter from './components/GameFooter/GameFooter';
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <GlobalStyle />
+        <MainContainer className='main'>
+          <GameHeader />
+            <GameInteraction />
+          <GameFooter />
+        </MainContainer>
+    </Fragment>
   );
 }
 

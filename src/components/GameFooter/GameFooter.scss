@@ -1,0 +1,19 @@
+.gameFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 2rem;
+
+    &-p {
+        font-size: 1rem;
+        font-family: inherit;
+        color: #320E3B;
+        font-weight: 700;
+
+        &--link {
+            color: #320E3B;
+            text-decoration: none;
+        }
+    }
+}

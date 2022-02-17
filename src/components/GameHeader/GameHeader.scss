@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 2rem;
+    margin-top: 0.6rem;
+    &-menuBtn {
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+        font-size: 3.9rem;
+        color: #320E3B;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,101 @@
+.gamePlayer-InnerContainer--Interaction_btnContainer .btn, .gamePlayer-InnerContainer--Interaction_btnContainer, .gamePlayer-InnerContainer--Interaction, .gamePlayer-InnerContainer, .gamePlayer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gamePlayer {
+  padding: 2rem;
+  background-color: rgba(236, 241, 243, 0.5);
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 1rem rgba(23, 26, 38, 0.25);
+  gap: 3rem;
+}
+.gamePlayer-msg {
+  width: 100%;
+  text-align: center;
+  font-size: 2.25rem;
+  color: #320E3B;
+  font-weight: 700;
+}
+.gamePlayer-InnerContainer {
+  gap: 1rem;
+}
+.gamePlayer-InnerContainer--randomNumber {
+  background-color: #320E3B;
+  box-shadow: 0 0.5rem 0.5rem 0 rgba(92, 23, 109, 0.25);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1.6rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.gamePlayer-InnerContainer--Interaction_input {
+  border-radius: 1rem;
+  text-align: right;
+  border: 3px solid rgba(49, 14, 58, 0.5);
+  height: 4rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: #DBDFFF;
+  padding-right: 1.6rem;
+}
+.gamePlayer-InnerContainer--Interaction_input::-moz-placeholder {
+  color: #320E3B;
+}
+.gamePlayer-InnerContainer--Interaction_input:-ms-input-placeholder {
+  color: #320E3B;
+}
+.gamePlayer-InnerContainer--Interaction_input::placeholder {
+  color: #320E3B;
+}
+.gamePlayer-InnerContainer--Interaction_input::-webkit-inner-spin-button, .gamePlayer-InnerContainer--Interaction_input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer .btn {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.6rem;
+  background-color: #320E3B;
+  border: none;
+  color: #DBFCFF;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: 0 3px 3px 0 rgba(92, 23, 109, 0.501);
+  transition: 0.25s;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer .btn:hover {
+  box-shadow: 0 0 0 0 transparent;
+  transform: translateY(3px);
+  background-color: #9eadff;
+  color: #320E3B;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer .btn:disabled {
+  box-shadow: 0 0 0 0 transparent;
+  transform: translateY(3px);
+  background-color: #9eadff;
+  color: #320E3B;
+  cursor: default;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer--restart {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer--check {
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+.gamePlayer-InnerContainer--Interaction_btnContainer--check-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}/*# sourceMappingURL=GameInteractionPlayer.css.map */

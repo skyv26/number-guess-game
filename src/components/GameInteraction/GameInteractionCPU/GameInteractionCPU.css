@@ -1,0 +1,95 @@
+.gameStatusContainer-display--p, .gameStatusContainer-display, .gameStatusContainer-secretNumberBox, .gameStatusContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gameStatusContainer {
+  background-color: rgba(236, 241, 243, 0.5);
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 1rem rgba(23, 26, 38, 0.25);
+}
+.gameStatusContainer-secretNumberBox {
+  position: relative;
+  align-self: center;
+  color: #320E3B;
+  width: 7.6rem;
+  height: 7.6rem;
+  box-shadow: inset 0 0 1rem rgba(23, 26, 38, 0.25);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+}
+.gameStatusContainer-secretNumberBox--icon {
+  position: absolute;
+  opacity: 0.8;
+  font-size: 6rem;
+  -webkit-animation: iconRotate 1s infinite;
+          animation: iconRotate 1s infinite;
+}
+@-webkit-keyframes iconRotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes iconRotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.gameStatusContainer-secretNumberBox--secretNumber {
+  position: absolute;
+  font-size: 2.6rem;
+}
+.gameStatusContainer-secretNumberBox .disabled {
+  display: none;
+}
+.gameStatusContainer-display {
+  margin-left: 2.5rem;
+  margin-bottom: 3rem;
+}
+.gameStatusContainer-display--p {
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #320E3B;
+  font-weight: 700;
+}
+.gameStatusContainer .highlight {
+  box-shadow: 0 0 0 0.25rem rgba(23, 26, 38, 0.7);
+  background-color: rgba(23, 26, 38, 0.7);
+  color: white;
+  font-weight: bold;
+  -webkit-animation: beatEffect 1s infinite;
+          animation: beatEffect 1s infinite;
+}
+@-webkit-keyframes beatEffect {
+  0% {
+    transform: scale(1) translateY(-50%);
+  }
+  50% {
+    transform: scale(1.1) translateY(-50%);
+  }
+  100% {
+    transform: scale(1) translateY(-50%);
+  }
+}
+@keyframes beatEffect {
+  0% {
+    transform: scale(1) translateY(-50%);
+  }
+  50% {
+    transform: scale(1.1) translateY(-50%);
+  }
+  100% {
+    transform: scale(1) translateY(-50%);
+  }
+}/*# sourceMappingURL=GameInteractionCPU.css.map */
